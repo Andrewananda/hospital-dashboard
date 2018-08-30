@@ -24,12 +24,28 @@
         <!-- Custom Fonts -->
         <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+       <style type="text/css">
+           
+            body{
+                background-image: url("image/logo.jpeg");
+            }
+            .navbar{
+                background-image: url("image/logo.jpeg");
+            }
+            .sidebar{
+                background-color: lightblue;
+            }
+            .row{
+                background-color: lightblue;
+                text-decoration-color: white;
+            }
+            .in{
+                background-color: lightblue;
+            }
+            .with{
+                background-image: url("image/pat.jpeg");
+            }
+       </style>
     </head>
     <body>
 
@@ -122,9 +138,10 @@
                         </ul>
                     </li>
                 </ul>
+
                 <!-- /.navbar-top-links -->
 
-                <div class="navbar-default sidebar" role="navigation">
+                <div class="navbar-default sidebar" role="navigation" class="in">
                     <div class="sidebar-nav navbar-collapse">
                         <ul class="nav" id="side-menu">
                             <li class="sidebar-search">
@@ -165,15 +182,16 @@
                 </div>
                 <!-- /.navbar-static-side -->
             </nav>
+        </div>
 
-            <div id="page-wrapper">
+            <div id="page-wrapper" class="with">
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">Patients</h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
-                <div>
+                <div class="in">
                      <table id="contact-list" border="1" class="table table-bordered">
         <thead>
             <tr>
@@ -208,26 +226,23 @@
         $run = mysqli_query($conn,$delete);
         if ($run && mysqli_affected_rows($conn)==1) {
             echo "Delete Successfully";
+            
         }else{
-            die("An Error occured" . mysqli_connect_error($conn));
+            //die("An Error occured" . mysqli_connect_error($conn));
         }
 }
 ?>
 
 
+
         <?php endwhile; ?>
 
 
-</div>
-                </div>
+   </div>
+ </div>
 
-            </div>
-            <!-- /#page-wrapper -->
 
-        </div>
-        <!-- /#wrapper -->
 
-        <!-- jQuery -->
         <script src="../js/jquery.min.js"></script>
 
         <!-- Bootstrap Core JavaScript -->

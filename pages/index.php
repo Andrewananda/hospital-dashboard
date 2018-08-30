@@ -33,6 +33,25 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <style type="text/css">
+            body{
+                background-image: url("image/logo.jpeg");
+            }
+            .navbar{
+                background-image: url("image/logo.jpeg");
+            }
+            .sidebar{
+                background-color: lightblue;
+            }
+            .row{
+                background-color: lightblue;
+                text-decoration-color: white;
+            }
+            .in{
+                background-image: url(image/logo.jpeg);
+            }
+           
+        </style>
     </head>
     <body>
 
@@ -167,7 +186,7 @@
                 </div>
             </nav>
 
-            <div id="page-wrapper">
+            <div id="page-wrapper" class="in">
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">St Andrew's Hospital</h1>
@@ -231,8 +250,8 @@
                                      
           
             </div>
-
         </div>
+
         
 
        

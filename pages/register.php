@@ -27,12 +27,34 @@
         <!-- Custom Fonts -->
         <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+        <style type="text/css">
+            body{
+            background-image: url("image/logo.jpeg");
+            }
+            .in{
+                background-color: lightblue;
+                }
+            .row{
+               background-image: url(image/logo.jpeg);
+                
+            }
+             .sidebar{
+                background-color: lightblue;
+            }
+            .navbar{
+                background-image: url(image/logo.jpeg);
+            }
+            .with{
+                background-image: url(image/patient.jpeg);
+            }
+            .page-header{
+                background-image: url(image/patient.jpeg);
+            }
+
+
+
+
+        </style>
     </head>
     <body>
 
@@ -170,31 +192,22 @@
                 <!-- /.navbar-static-side -->
             </nav>
 
-            <div id="page-wrapper">
-                <div class="row">
+            <div id="page-wrapper" class="with">
+                <div class="with" >
                     <div class="col-lg-12">
                         <h1 class="page-header">Add Patient</h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
                 <div class="row">
-                    <div class="col-lg-12">
-                       <table class="table table-bordered" border="1">
-                           
-                       </table>
-                        
-                       
-                    </div>
-                     <div class="row">
-                    <div class="col-lg-12">
-                        <div class="panel panel-default">
+                    <div class="col-lg-12 in">
                         
                                             <div class="form-group">
                                                 <form action="#" method="get">
                                                     <label class="form-control">First Name
                                                         <input type="text" name="fname" required="required">
                                                     </label>
-                                                    <label class="form-control">Second Name
+                                                    <label class="form-withcontrol">Second Name
                                                         <input type="text" name="sname" required="required">
                                                     </label>
                                                     <label class="form-control">Age
@@ -221,7 +234,7 @@
                                                         if (!$result) {
                                                             die("Error " . mysqli_connect_error($conn));
                                                         }else{
-                                                            //echo "Added Successful";
+                                                           
                                                         }
                                                         
 
@@ -233,18 +246,13 @@
 
                                                 
                                             </div>
-                                            
-                                            
-                                            
-                                        
-                                    </div>
-                    
-                 
-                <!-- /.row -->
             </div>
-            <!-- /#page-wrapper -->
-
+        
         </div>
+    </div>
+</div>
+
+        
         <!-- /#wrapper -->
 
         <!-- jQuery -->
